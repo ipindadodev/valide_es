@@ -24,7 +24,7 @@ Su objetivo es proporcionar una API sencilla, fiable y portable para validar dat
 
 - [FastAPI](https://fastapi.tiangolo.com/) como framework de API
 - Validación con [Pydantic](https://docs.pydantic.dev/)
-- Pensado para ejecutarse en tu VPS o infraestructura local
+- Pensado para ejecutarse en tu servidor o infraestructura local
 
 ---
 
@@ -52,8 +52,8 @@ uvicorn valide_es.main:app --reload
 
 | Método | Endpoint      | Descripción                    |
 |--------|---------------|--------------------------------|
-| POST   | `/dni`        | Valida DNI/NIE/NIF             |
-| POST   | `/cif`        | Valida CIF                    |
+| POST   | `/nif`        | Valida DNI/NIE/NIF             |
+| POST   | `/cif`        | Valida CIF                     |
 | POST   | `/iban`       | Valida IBAN español            |
 | POST   | `/telefono`   | Valida número nacional         |
 | POST   | `/cp`         | Valida código postal           |
@@ -68,10 +68,7 @@ Este proyecto se publica bajo licencia [MIT](LICENSE).
 
 ## 💡 Roadmap
 
-- [ ] Validación avanzada cruzada con listas oficiales (INE, Correos…)
-- [ ] CLI local
-- [ ] Dockerfile opcional
-- [ ] Ejemplo de integración con Laravel y JavaScript
+- Aún no decidido ¿quieres añadir algo? haz una PR
 
 ---
 
