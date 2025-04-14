@@ -8,6 +8,7 @@ class Settings(BaseModel):
     debug: bool = os.getenv("DEBUG", "false").lower() == "true"
     allowed_hosts: list[str] = ["*"]
     docs_url: str = "/docs"
+    redoc_url: str | None = None
     openapi_url: str = "/openapi.json"
 
 @lru_cache()
