@@ -54,7 +54,6 @@ uvicorn valide_es.main:app --reload
 | POST   | `/nif`        | Valida DNI/NIE/NIF             |
 | POST   | `/iban`       | Valida IBAN español            |
 | POST   | `/phone`      | Valida número nacional         |
-| POST   | `/cp`         | Valida código postal           |
 
 ---
 
