@@ -1,1 +1,4 @@
 /venv/
+# Ignorar directorios con __pycache__ en cualquier parte del proyecto
+
+__pycache__/
