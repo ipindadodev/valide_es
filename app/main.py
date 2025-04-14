@@ -9,12 +9,13 @@ from app.api.phone import router as phone_router
 settings = get_settings()
 
 app = FastAPI(
-    title="Valide.es API",
-    version="1.0.0",
+    title=settings.app_name,
+    version=settings.version,
     description="Validación de identificadores comunes españoles (NIF, CIF, IBAN, teléfono)",
-    docs_url="/docs",
-    redoc_url=None,
-    openapi_url="/openapi.json"
+    debug=settings.debug,
+    docs_url=settings.docs_url,
+    redoc_url=settings.redoc_url,
+    openapi_url=settings.openapi_url,
 )
 
 app.add_middleware(
