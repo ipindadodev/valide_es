@@ -2,8 +2,7 @@
 
 **Valide.es** es un microservicio open source para validar identificadores estructurados usados en España, como:
 
-- DNI / NIE / NIF
-- CIF (personas jurídicas)
+- DNI / NIE / NIF (Personas físicas y jurídicas)
 - IBAN (cuentas bancarias)
 - Teléfonos nacionales
 - Códigos postales
