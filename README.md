@@ -30,22 +30,51 @@ Su objetivo es proporcionar una API sencilla, fiable y portable para validar dat
 
 ## 📦 Instalación rápida
 
-## Clona el repositorio
 ```bash
+# Clona el repositorio
 git clone https://github.com/ipindadodev/valide_es.git
 cd valide_es
-```
 
-## Crea y activa entorno virtual
-```bash
+# Crea y activa entorno virtual
 python3 -m venv venv
 source venv/bin/activate
-```
 
-## Instala dependencias
-```bash
+# Instala dependencias
 pip install -r requirements.txt
 
 # Lanza el microservicio en local
 uvicorn valide_es.main:app --reload
 ```
+
+---
+
+## 📡 Endpoints disponibles
+
+| Método | Endpoint      | Descripción                    |
+|--------|---------------|--------------------------------|
+| POST   | `/dni`        | Valida DNI/NIE/NIF             |
+| POST   | `/cif`        | Valida CIF                    |
+| POST   | `/iban`       | Valida IBAN español            |
+| POST   | `/telefono`   | Valida número nacional         |
+| POST   | `/cp`         | Valida código postal           |
+
+---
+
+## 🧾 Licencia
+
+Este proyecto se publica bajo licencia [MIT](LICENSE).
+
+---
+
+## 💡 Roadmap
+
+- [ ] Validación avanzada cruzada con listas oficiales (INE, Correos…)
+- [ ] CLI local
+- [ ] Dockerfile opcional
+- [ ] Ejemplo de integración con Laravel y JavaScript
+
+---
+
+## ✨ Créditos
+
+Creado con ❤️ por [@ipindadodev](https://github.com/ipindadodev) como herramienta libre, modular y robusta para validar datos estructurados en el ecosistema español.
