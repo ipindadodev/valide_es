@@ -25,8 +25,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app = FastAPI(
-)
 
 # Routers registrados correctamente
 app.include_router(nif_router, prefix="/nif", tags=["NIF/DNI/NIE"])
