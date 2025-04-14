@@ -1,14 +1,8 @@
 # app/wsgi.py
 
-from app.main import app  # Este es tu FastAPI app
+from app.main import app
+from fastapi.middleware.wsgi import WSGIMiddleware
 
-def application(scope, receive, send):
-    """
-    Adaptador ASGI a WSGI básico para FastAPI usando mod_wsgi.
-    """
-    if scope['type'] == 'http':
-        from mangum import Mangum
-        handler = Mangum(app)
-        return handler(scope, receive, send)
-    raise NotImplementedError(f"Scope type {scope['type']} not supported.")
-# Este adaptador permite que tu aplicación FastAPI funcione con servidores WSGI.
+application = WSGIMiddleware(app)
+
+# This is a WSGI application that can be used with any WSGI server.
