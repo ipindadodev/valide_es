@@ -1,7 +1,8 @@
 # Valide.es
-![Made in Spain](https://img.shields.io/badge/Made%20in-Spain-red?style=flat-square&logo=github)
+![Made in Spain](https://img.shields.io/badge/Made%20in-Spain-red?style=flat-square)
 ![Powered by FastAPI](https://img.shields.io/badge/Powered%20by-FastAPI-009688?style=flat-square&logo=fastapi)
 ![License MIT](https://img.shields.io/github/license/ipindadodev/valide_es?style=flat-square)
+![Valide.es](https://img.shields.io/badge/Validaci%C3%B3n-espa%C3%B1ola-blue?style=flat-square)
 
 ![Valide.es logo](https://github.com/user-attachments/assets/782cf45c-a2f9-4316-933f-251fae002ba5)
 
