@@ -30,17 +30,22 @@ Su objetivo es proporcionar una API sencilla, fiable y portable para validar dat
 
 ## 📦 Instalación rápida
 
+## Clona el repositorio
 ```bash
-# Clona el repositorio
 git clone https://github.com/ipindadodev/valide_es.git
 cd valide_es
+```
 
-# Crea y activa entorno virtual
+## Crea y activa entorno virtual
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
-# Instala dependencias
+## Instala dependencias
+```bash
 pip install -r requirements.txt
 
 # Lanza el microservicio en local
 uvicorn valide_es.main:app --reload
+```
